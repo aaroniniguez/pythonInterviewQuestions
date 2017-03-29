@@ -1,10 +1,13 @@
-mylist = [1,2,3,3,4]
-def getdup(mylist):
-    prev = 0
-    for i in mylist:
-        if i == prev:
+
+mylist = [1,2,3,4]
+def find_repeat(numbers):
+    myset = set()
+    for i in numbers:
+        if i in myset:
             return i
         else:
-            prev = i
-    return False
-print getdup(mylist)
+            myset.add(i)
+    raise Exception("no duplicates")
+
+    
+print find_repeat(mylist)
