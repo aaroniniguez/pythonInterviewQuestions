@@ -1,3 +1,4 @@
+#reverse a string in place
 def reverse(string):
     mylist = list(string)
     b = ""

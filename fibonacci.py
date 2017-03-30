@@ -3,10 +3,8 @@ class fib:
     def __init__(self):
         self.savedVals = {}
     def getNth(self,n):
-        if n ==0:
-            return 0
-        if n == 1:
-            return 1
+        if n in [0,1]:
+            return n
         if n in self.savedVals:
             return self.savedVals[n]
         else:
